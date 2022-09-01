@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        /*for all label text color*/
+        label {
+            color: green
+        }
+
+        /* for all input bordor radius  */
+        input {
+            border-radius: 20px;
+        }
+
+        /* for textarea border radius */
+        .area {
+            border-radius: 20px;
+        }
+
+        /* for h1 tag  bg color  */
+        #heading {
+            background: black;
+            width: 350px;
+            border-radius: 10px;
+        }
+
+        /* for textarea head bg color and font size  */
+        #lebelhead {
+            font-size: 25px;
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        /* for submit button bg color  */
+        button {
+            background-color: green;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="heading" style="color:red;"><u> &nbsp;Fill Your Survey Form :-</u></h1>
+    </div>
+    <form action="">
+        <!-- LABEL TAG FOR NAME informetion  -->
+        <label for="name">Name</label> <br>
+        <!-- input tag for fill name hare  -->
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required> <br> <br>
+        <!-- label tag for email id informetion -->
+        <label for="email"> Email</label> <br>
+        <!-- input tag for fill email id -->
+        <input type="email" name="eamil" id="email" placeholder="test@gamil.com" required> <br> <br>
+        <!-- label tag for roll no. informetion -->
+        <label for="rollnumber">Roll Number</label> <br>
+        <!-- input tag for fill roll no. -->
+        <input type="Number" name="roll Number" id="rollnumber" placeholder="roll" required> <br> <br>
+        <!-- label for course rating -->
+        <label for="dropdown">How do you rate our course?</label> <br>
+        <!-- select option use for multiple option but other option is hide  -->
+        <select class="area" name="course" id="dropdown">
+            <!-- optin felid is used to complete  tag -->
+            <option value="excelent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="normel">Normal</option>
+        </select> <br> <br>
+        <!-- label tag for selct opton list  -->
+        <label> Your Favorite Topic in<span style="color:blue ;"> <strong> HTML</strong></span> </label> <br>
+        <!-- input tag for checkbox  -->
+        <input type="checkbox" value="Structuralelements">Structural Elements <br>
+        <input type="checkbox" value="LinksandList">Links and List <br>
+        <input type="checkbox" value="HTMLMedia">HTML Media <br>
+        <input type="checkbox" velue="tables"> HTML Tables <br>
+        <input type="checkbox" value="groupelements"> Grouping Elements <br>
+        <input type="checkbox" value="forms"> Forms <br> <br>
+        <!-- label for select any one   -->
+        <label> Do you like the <span style="color:blue ;"> <strong> HTML</strong></span> course?</label> <br>
+        <!-- input for redio tag for any one slect  -->
+        <input class="y" type="radio" name="htmlcourse" value="yes">Yes
+        <input class="n" type="radio" name="htmlcourse" value="no"> No <br> <br>
+        <!-- label for textarea  -->
+        <label id="lebelhead" for="comment">Few words about course :</label> <br>
+        <!-- textarea tag for fill the textarea  -->
+        <textarea class="area" name="comment" id="comment" cols="50" rows="5" style="color: grey;"></textarea> <br> <br>
+        <!-- button for submit -->
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
